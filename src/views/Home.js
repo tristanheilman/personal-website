@@ -16,7 +16,7 @@ const Home = forwardRef((props, ref) => {
     }, [isVisible])
 
     return (
-        <Section ref={ref} childStyle={`${!showContent ? 'blur-md transition-filter ease-in-out duration-1000 delay-300' : 'transition-filter ease-in-out duration-1000 delay-300'}`} customStyle={{background: `radial-gradient(circle at 60% bottom, rgba(59,130,246,1) 0%, rgba(100,161,249,1) 0%, rgba(131,185,252,1) 0%, rgba(147,197,253,1) 7%, rgba(154,201,253,1) 12%, rgba(169,209,253,1) 17%, rgba(219,234,254,1) 31%, rgba(241,245,249,1) 100%)`}}>
+        <Section ref={ref} childStyle={`${!showContent ? 'blur-md transition-filter ease-in-out duration-1000 delay-100' : 'transition-filter ease-in-out duration-1000 delay-100'}`} customStyle={{background: `radial-gradient(circle at 60% bottom, rgba(59,130,246,1) 0%, rgba(100,161,249,1) 0%, rgba(131,185,252,1) 0%, rgba(147,197,253,1) 7%, rgba(154,201,253,1) 12%, rgba(169,209,253,1) 17%, rgba(219,234,254,1) 31%, rgba(241,245,249,1) 100%)`}}>
             <div className="mt-8 max-w-7xl mx-auto px-4 sm:px-6 md:px-8" >
                 <p className="mt-4 mb-8 text-center mx-auto max-w-3xl text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Hi my name
                 is <span className="text-blue-500 relative">

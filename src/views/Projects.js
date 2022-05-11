@@ -77,8 +77,8 @@ const Projects = forwardRef((props, ref) => {
     }, [isVisible])
 
     return (
-        <Section ref={ref} sectionStyle="bg-blue-100" childStyle={`${!showContent ? 'blur-md transition-filter ease-in-out duration-1000 delay-300' : 'transition-filter ease-in-out duration-1000 delay-300'}`}>
-            <div className="max-w-7xl mx-auto pb-20 sm:pb-32 md:pb-40">
+        <Section ref={ref} sectionStyle="bg-blue-100" childStyle={`${!showContent ? 'blur-md transition-filter ease-in-out duration-1000 delay-100 pb-20 sm:pb-32 md:pb-40' : 'transition-filter ease-in-out duration-1000 delay-100 pb-20 sm:pb-32 md:pb-40'}`}>
+            <div className="max-w-7xl mx-auto">
                 <p className="max-w-3xl text-3xl sm:text-4xl text-slate-900 font-bold tracking-tight">Projects & Experience</p>
                 <div className="mt-8 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:grid lg:gap-8 lg:grid-cols-3 lg:items-center">
                     {projects.map((project, index) => {

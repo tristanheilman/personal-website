@@ -15,7 +15,7 @@ const Blog = (props) => {
     }, [isVisible])
 
     return (
-        <Section ref={ref} childStyle={`${!showContent ? 'blur-md transition-filter ease-in-out duration-1000 delay-300' : 'transition-filter ease-in-out duration-1000 delay-300'}`}>
+        <Section ref={ref} childStyle={`${!showContent ? 'blur-md transition-filter ease-in-out duration-1000 delay-100' : 'transition-filter ease-in-out duration-1000 delay-100'}`}>
             <p>Blog</p>
         </Section>
     );
