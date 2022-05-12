@@ -5,7 +5,7 @@ import Section from '../components/Section';
 import visibleOnScreen from '../utils/visibleOnScreen';
 
 const Home = forwardRef((props, ref) => {
-    const { isVisible, visibilityRatio } = visibleOnScreen(ref);
+    const isVisible = visibleOnScreen(ref);
     const [showContent, setShowContent] = useState(false);
 
     useEffect(() => {

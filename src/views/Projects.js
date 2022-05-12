@@ -10,11 +10,11 @@ const projects = [
         description: "Roughly two years ago I co-founded Scoopt with a close friend of mine. I led the development and produced the majority of the code. Scoopt was built using React Native and Firebase and was designed to bring friends closer together through event sharing and group messaging.",
         tags: [
             {
-                color: 'bg-cyan-500',
+                color: 'bg-green-500',
                 text: 'Aug. 2019'
             },
             {
-                color: 'bg-green-500',
+                color: 'bg-cyan-500',
                 text: 'Jan. 2020'
             },
             {
@@ -27,15 +27,15 @@ const projects = [
     },
     {
         title: "Premier Art Destination",
-        image: "https://ik.imagekit.io/e9mf9z51n6h/tr:w-800,c-at_least,f-webp,pr-true/o/pad-logo.png?alt=media&token=c103b6e6-da8d-4560-be9d-141e97f03264",
+        image: "https://firebasestorage.googleapis.com/v0/b/treeeest-solutions.appspot.com/o/pad-full.png?alt=media&token=bb2f954d-5657-4fc3-b614-16cad859218d",
         description: "An art gallery/shop/community built for a client. The website features a primary/secondary marketplace, an auction house, Stripe & Discord integrations, and custom adminstrative components. The webiste was custom built, by request, utilizing React and Firebase.",
         tags: [
             {
-                color: 'bg-cyan-500',
+                color: 'bg-green-500',
                 text: 'Nov. 2021'
             },
             {
-                color: 'bg-green-500',
+                color: 'bg-cyan-500',
                 text: 'April 2022'
             },
             {
@@ -48,8 +48,8 @@ const projects = [
     },
     {
         title: "DeePavLov Chat Bot",
-        image: "https://ik.imagekit.io/e9mf9z51n6h/ts/tr:w-800,f-webp,pr-true/o/scooptLogo.png?alt=media&token=be8bf6e5-fb5f-4e7a-b2de-95b56b3f5b10",
-        description: "An AI chat bot built using DeePavLov, an open-source conversational AI library that uses TensorFlow and Keras. You can see some code and the chat bot featured at the top of my site!",
+        image: "http://docs.deeppavlov.ai/en/master/_static/deeppavlov.png",
+        description: "An AI chat bot built using DeePavLov, an open-source conversational AI library that uses TensorFlow and Keras. I started this project to expand my knowledge of python while diving into deep learning models. You can talk to my bot and see some of the code below!",
         tags: [
             {
                 color: 'bg-green-500',
@@ -66,7 +66,7 @@ const projects = [
 ]
 
 const Projects = forwardRef((props, ref) => {
-    const { isVisible, visibilityRatio } = visibleOnScreen(ref);
+    const isVisible = visibleOnScreen(ref);
     const [showContent, setShowContent] = useState(false);
 
     useEffect(() => {
@@ -79,11 +79,10 @@ const Projects = forwardRef((props, ref) => {
     return (
         <Section ref={ref} sectionStyle="bg-blue-100" childStyle={`${!showContent ? 'blur-md transition-filter ease-in-out duration-1000 delay-100 pb-20 sm:pb-32 md:pb-40' : 'transition-filter ease-in-out duration-1000 delay-100 pb-20 sm:pb-32 md:pb-40'}`}>
             <div className="max-w-7xl mx-auto">
-                <p className="max-w-3xl text-3xl sm:text-4xl text-slate-900 font-bold tracking-tight">Projects & Experience</p>
-                <div className="mt-8 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:grid lg:gap-8 lg:grid-cols-3 lg:items-center">
+                <div className="mt-16 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project, index) => {
                         return (
-                            <div key={`project-${index}`} className={`mb-8 relative row-start-1 col-start-${index+1} col-span-1`}>
+                            <div key={`project-${index}`} className={`mb-8 relative`}>
                                 <ProjectCard
                                     title={project.title}
                                     image={project.image}

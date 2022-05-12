@@ -11,6 +11,9 @@ module.exports = {
                 'lucario': '#263E52',
                 'scoopt': '#91B2F9',
                 'pad': '#1e1e1e',
+            },
+            transitionProperty: {
+                'height': 'height',
             }
         },
     },

@@ -4,11 +4,13 @@ import { FaArrowRight } from 'react-icons/fa';
 const ProjectCard = (props) => {
 
     return (
-        <figure className="shadow-xl shadow-blue-200/50 xl:w-auto bg-blue-200 p-8 rounded-lg space-y-4">
-            <img className="flex-none w-24 mx-auto" src={props.image}/>
-            <figcaption className="space-y-4 text-center">
-                <h2 className="text-2xl font-semibold text-slate-900">{props.title}</h2>
-                <div className="flex gap-1 flex-wrap">
+        <div className="h-full flex flex-col justify-between shadow-xl shadow-blue-200/50 xl:w-auto bg-blue-200 p-8 rounded-lg">
+            <div>
+                <div className="flex h-20 w-20">
+                    <img className="m-auto" src={props.image}/>
+                </div>
+                <h2 className="text-2xl font-semibold text-slate-900 mt-4">{props.title}</h2>
+                <div className="flex gap-1 flex-wrap mt-4">
                     {props.tags.map((tag, index) => {
                         return (
                             <span key={`tag-${index}`} className="flex space-x-2 bg-blue-300 rounded-full py-1 px-2 items-center">
@@ -18,13 +20,13 @@ const ProjectCard = (props) => {
                         )
                     })}
                 </div>
-                <p className="text-md text-slate-900">{props.description}</p>
-                <span className="flex justify-end items-center gap-1 mt-8 font-semibold text-blue-500 hover:text-blue-400">
-                    <a href={props.link}>{props.linkText}</a>
-                    <FaArrowRight />
-                </span>
-            </figcaption>
-        </figure>
+                <p className="text-md text-slate-900 mt-4">{props.description}</p>
+            </div>
+            <a href={props.link} className="mt-4 flex self-end items-center gap-1 font-semibold text-blue-500 hover:text-blue-400">
+                <span>{props.linkText}</span>
+                <FaArrowRight />
+            </a>
+        </div>
     );
 }
 

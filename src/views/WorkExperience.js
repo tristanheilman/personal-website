@@ -4,10 +4,11 @@ import visibleOnScreen from '../utils/visibleOnScreen';
 import { FaArrowRight } from "react-icons/fa";
 
 const WorkExperience = forwardRef((props, ref) => {
-    const { isVisible, visibilityRatio } = visibleOnScreen(ref);
+    const isVisible = visibleOnScreen(ref);
     const [showContent, setShowContent] = useState(false);
 
     useEffect(() => {
+        console.log("isVisible, WorkExperience", isVisible)
         if(isVisible) {
             props.setSelectedNavItem('Work Experience');
             setShowContent(true);
@@ -21,7 +22,7 @@ const WorkExperience = forwardRef((props, ref) => {
                 <div className="max-w-5xl mx-auto mb-2">
                     <p className="w-fit text-sm font-mono">shortened resume</p>
                 </div>
-                <ul className="max-w-5xl mx-auto py-4 px-4 sm:py-6 md:px-8 sm:px-6 md:px-8 grid sm:grid-cols-1 gap-8 lg:grid-cols-4 lg:items-center bg-blue-200 rounded-lg">
+                <ul className="mb-8 max-w-5xl mx-auto py-4 px-4 sm:py-6 md:px-8 sm:px-6 md:px-8 grid sm:grid-cols-1 gap-8 lg:grid-cols-4 lg:items-center bg-blue-200 rounded-lg">
                     <li className="text-center text-slate-900">
                         <h2 className="font-semibold">Premier Art Destination</h2>
                         <p className="">Freelance Work</p>
@@ -45,20 +46,6 @@ const WorkExperience = forwardRef((props, ref) => {
                     </li>
                 </ul>
             </div>
-            {<div className="mt-8 max-w-7xl mx-auto grid grid-flow-col grid-rows-4 grid-cols-4 gap-8">
-                <div className="row-start-1 col-start-1 col-span-2">
-                    <img className="rounded-lg" src="https://ik.imagekit.io/e9mf9z51n6h/ts/tr:-webp,pr-true/o/family.jpg?alt=media&token=b15b467f-6f4f-4b4f-b307-3ea8ff3ee268" alt=""/>
-                </div>
-                <div className="col-start-1 row-start-2 col-span-2 row-span-2">
-                    <img className="rounded-lg" src="https://ik.imagekit.io/e9mf9z51n6h/ts/tr:f-webp,pr-true/o/aboutMeBanana.png?alt=media&token=c88f1cf0-da8b-4ecc-98ab-94f533616707" alt=""/>
-                </div>
-                <div className="col-start-3 row-start-1 row-span-2 col-span-2 self-end">
-                    <img className="rounded-lg" src="https://ik.imagekit.io/e9mf9z51n6h/ts/tr:f-webp,pr-true/o/aboutMeSnow.png?alt=media&token=c23b7880-91c4-4a7d-95ea-f52a4c721a19" alt=""/>
-                </div>
-                <div className="col-start-3 row-start-3 row-span-2 col-span-2">
-                    <img className="rounded-lg" src="https://ik.imagekit.io/e9mf9z51n6h/ts/tr:f-webp,pr-true/o/mountains.jpg?alt=media&token=b47eb2f1-eaf7-4d03-88c0-bb27e00610fe" alt=""/>
-                </div>
-            </div>}
         </Section>
     );
 });
