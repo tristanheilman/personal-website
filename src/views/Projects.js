@@ -7,7 +7,7 @@ const projects = [
     {
         title: "Scoopt",
         image: "https://ik.imagekit.io/e9mf9z51n6h/ts/tr:w-800,f-webp,pr-true/o/scooptLogo.png?alt=media&token=be8bf6e5-fb5f-4e7a-b2de-95b56b3f5b10",
-        description: "Roughly two years ago I co-founded Scoopt with a close friend of mine. I led the development and produced the majority of the code. Scoopt was built using React Native and Firebase and was designed to bring friends closer together through event sharing and group messaging.",
+        description: "Roughly two years ago I co-founded Scoopt with a close friend of mine. I led the development and produced the code. Scoopt was built using React Native and Firebase and was designed to bring friends closer together through event sharing and group messaging.",
         tags: [
             {
                 color: 'bg-green-500',
@@ -49,7 +49,7 @@ const projects = [
     {
         title: "DeePavLov Chat Bot",
         image: "http://docs.deeppavlov.ai/en/master/_static/deeppavlov.png",
-        description: "An AI chat bot built using DeePavLov, an open-source conversational AI library that uses TensorFlow and Keras. I started this project to expand my knowledge of python while diving into deep learning models. You can talk to my bot and see some of the code below!",
+        description: "An AI chat bot built using DeePavLov, an open-source conversational AI library that uses TensorFlow and Keras. I started this project to expand my knowledge of python while diving into deep learning models. My bot will be showcased on the site soon!",
         tags: [
             {
                 color: 'bg-green-500',

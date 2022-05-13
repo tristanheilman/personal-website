@@ -310,9 +310,16 @@ const AboutMe = forwardRef((props, ref) => {
             </Section>
             <Section sectionStyle="bg-blue-100" childStyle={`${!showContent ? 'blur-md transition-filter ease-in-out duration-1000 delay-100' : 'transition-filter ease-in-out duration-1000 delay-100'}`}>
                 <HobbyContainer title="My Hobbies" hobbies={hobbies} >
-                    <div className="mx-auto">
-                        <Radar options={configRadarChart} data={dataRadar} />
-                    </div>
+                <ul className="grid gap-8 grid-cols-1">
+                    <li>
+                        <figure className="bg-blue-200 rounded-lg">
+                            <img className="rounded-lg" src="https://firebasestorage.googleapis.com/v0/b/treeeest-solutions.appspot.com/o/1A9BD133-E53C-4988-AAAD-20411E753161.jpeg?alt=media&token=ee3e9cdf-944c-4773-be60-11b1959d4597" alt=""/>
+                            <figcaption className="p-2">
+                                <p className="text-sm font-mono">Softball Season</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
                 </HobbyContainer>
             </Section>
         </div>
