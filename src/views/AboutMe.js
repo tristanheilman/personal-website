@@ -28,7 +28,9 @@ const knowledge = [
         description: (
             <p className="mt-4 text-slate-600">I started learning <a href="https://reactnative.dev/" className="font-semibold text-blue-500 hover:text-blue-400">React Native</a> when I began
             developing <a href="https://apps.apple.com/us/app/scoopt-discover-plan-chat/id1536820705" className="font-semibold text-blue-500 hover:text-blue-400">Scoopt</a>. I learned most of what I know by solving my own problems. After about a year
-            of practice with React Native, I had an app published on the iOS App Store.</p>
+            of practice with React Native, I had an app published on the iOS App Store. Since then I have been promoted to the Lead Developer role at <a href="https://wridz.com" className="font-semibold text-blue-500 hover:text-blue-400">Wridz</a> 
+            where 90% entire ridshare application is built using React Native. My job has been to bring life to the app
+            through UI/UX changes as well as continue to solve daily issues brought up by customers and the team.</p>
         )
     },
     {
@@ -37,8 +39,30 @@ const knowledge = [
         text: 'JavaScript',
         description: (
             <p className="mt-4 text-slate-600">Out of every programming language I have used thus far in my career, JavaScript is my favorite. Throughout college, it was my language of choice
-            when given the option for projects or assignments. My first real world applications of JS began at CIMx Software, where we used <a hre="https://clarle.github.io/yui3/" className="font-semibold text-blue-500 hover:text-blue-400">YUI</a>, a JS and CSS library for building interative
+            when given the option for projects or assignments. My first real world applications of JS began at CIMx Software, where we used <a href="https://clarle.github.io/yui3/" className="font-semibold text-blue-500 hover:text-blue-400">YUI</a>, a JS and CSS library for building interative
             web applications.</p>
+        )
+    },
+    {
+        selected: false,
+        color: 'bg-yellow-300',
+        text: 'react-native-reanimated',
+        description: (
+            <p className="mt-4 text-slate-600">I love this package. When I began my refactoring journey with Wridz I looked here as my first source to bring animations to the app.
+            Everything I know I taught myself from reading the documentation and trying things out. I successfully managed to improve the Wridz app by 10x with a few simple tricks I
+            learned using this package. A stale page is a boring page... if you're looking to liven things up, I highly suggest learning how to use <a href="https://docs.swmansion.com/react-native-reanimated/" className="font-semibold text-blue-500 hover:text-blue-400">react-native-reanimated</a>
+            </p>
+        )
+    },
+    {
+        selected: false,
+        color: 'bg-yellow-300',
+        text: 'Figma',
+        description: (
+            <p className="mt-4 text-slate-600">Through all the various projects I have worked on, I have found Figma the easiest tool to use when creating any type of design file. 
+            After joining Wridz and begining my initiative to refactor the UI/UX of the entire app, I looked to Figma. I designed various wireframes and prototypes that went through
+            many refactors of their own. When the main design phase was over, I found myself coming back often whenever new features were being proposed to get an idea of how things
+            would fit and work with the rest of the UI.</p>
         )
     },
     {

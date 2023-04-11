@@ -6,7 +6,7 @@ export default function visibleOnScreen(ref) {
     const [isVisible, setVisibility] = useState(false)
 
     const options = {
-        threshold: innerWidth < 1000 ? 0.1 : 0.35,
+        threshold: innerWidth < 1000 ? 0.1 : 0.3,
     }
 
     const observer = new IntersectionObserver(([entry]) => {
